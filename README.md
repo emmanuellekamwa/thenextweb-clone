@@ -13,7 +13,7 @@ The goal of the project was to focus mainly on the responsiveness of the web pag
 
 ## Live Demo
 
-[Live Demo Link](file:///C:/Users/HP%20HOUSE/Desktop/thenextweb-clone/index.html/)
+[Live Demo Link](https//file:///C:/Users/HP%20HOUSE/Desktop/thenextweb-clone/index.html/)
 
 ## Author
 
