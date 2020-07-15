@@ -4,6 +4,15 @@
     box-sizing: border-box;
 }
 
+body {
+    margin: 0px 30px;
+    max-width: 1200px;
+}
+
+.hide-box {
+    display: none;
+}
+
 .right-nav {
     display: none;
 }
@@ -33,11 +42,13 @@ header > img {
 
 .main_image {
     padding: 10px 10px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
 }
 
 .main_image-one {
     background: linear-gradient(rgba(173, 173, 173, 0.2), rgba(20, 20, 20, 1.3)),
-        url("images/nitendo.png") no-repeat;
+        url("images/nitendo.png");
     background-repeat: no-repeat;
     height: 158px;
     margin-bottom: 10px;
@@ -95,14 +106,16 @@ header > img {
 
 .main_image-two {
     background: linear-gradient(rgba(173, 173, 173, 0.2), rgba(20, 20, 20, 1)),
-        url("images/usb.jpg") no-repeat;
+        url("images/usb.jpg");
+    background-repeat: no-repeat;
     height: 131.5px;
     margin-bottom: 10px;
 }
 
 .main_image-three {
     background: linear-gradient(rgba(173, 173, 173, 0.2), rgba(20, 20, 20, 1)),
-        url("images/technology.png") no-repeat;
+        url("images/technology.png");
+    background-repeat: no-repeat;
     height: 158px;
     margin-bottom: 10px;
 }
@@ -400,7 +413,27 @@ footer {
     vertical-align: baseline;
 }
 
+@media only screen and (max-width: 1023px) {
+    .img-logo img,
+    .img-logo p {
+        display: none;
+    }
+}
+
 @media only screen and (min-width: 768px) {
+    .img-logo p {
+        color: #fff;
+        /* position: relative; */
+        left: 500px;
+        bottom: 96px;
+    }
+
+    .img-logo img {
+        height: 90px;
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+
     header {
         position: sticky;
         top: 0;
@@ -449,12 +482,6 @@ footer {
         height: 5vw;
         background: #000;
         padding: 12px 10px 2px 10px;
-        /* margin-left: 105px; */
-    }
-
-    .img-logo img,
-    .img-logo p {
-        display: none;
     }
 
     .list1 {
@@ -614,15 +641,13 @@ footer {
         grid-template-columns: 1fr, 1fr;
     }
 
-    .box-wrapper {
+    .funds {
         display: grid;
-        width: 97%;
         grid-template-columns: repeat(3, 1fr);
-        grid-gap: 10px;
-        margin: auto;
+        grid-gap: 15px;
     }
 
-    .funds > div:last-child {
+    .hide-box {
         display: none;
     }
 
@@ -664,7 +689,7 @@ footer {
     }
 
     .upper-footer {
-        width: 768px;
+        width: 100%;
         height: 161px;
     }
 
@@ -681,8 +706,15 @@ footer {
     }
 
     .lower-footer {
-        width: 768px;
+        width: 100%;
         height: 97px;
+    }
+}
+
+@media only screen and (max-width: 1023px) {
+    .img-logo img,
+    .img-logo p {
+        display: none;
     }
 }
 
@@ -707,6 +739,18 @@ footer {
         height: 32px;
     }
 
+    .img-logo {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .img-logo p {
+        color: #fff;
+        margin-top: 18px;
+        margin-right: 19px;
+    }
+
     .list3 {
         position: relative;
         right: 124px;
@@ -728,43 +772,29 @@ footer {
             url(images/nitendo.png) no-repeat;
     }
 
-    .img-logo {
-        height: 1px;
-    }
-
-    .img-logo p {
-        color: #fff;
+    .headings {
+        padding: 14px 20px;
         position: relative;
-        left: 500px;
-        bottom: 96px;
-    }
-
-    .img-logo img {
-        height: 90px;
-        margin-top: 20px;
-        margin-left: 20px;
+        bottom: 15px;
     }
 
     .main_image-one h5 {
-        position: relative;
-        top: 110px;
-        left: 25px;
+        top: 60px;
+        left: 0px;
         font-size: 14px;
     }
 
     .main_image-one h2 {
         width: 100%;
         height: 181px;
-        position: relative;
-        top: 110px;
-        left: 25px;
+        top: 60px;
+        left: 0px;
         font-size: 40px;
     }
 
     .details1 {
-        position: relative;
-        top: 125px;
-        left: 25px;
+        top: 20px;
+        left: 0px;
         font-size: 12px;
     }
 
@@ -779,39 +809,45 @@ footer {
         width: 100%;
         height: 124px;
         font-size: 35px;
-        position: relative;
-        left: 25px;
+        left: 0px;
+    }
+
+    .img-logo p {
+        color: #fff;
+    }
+
+    .img-logo img {
+        left: 0;
     }
 
     .details2 {
-        position: relative;
         top: 40px;
-        left: 25px;
+        left: 0;
         font-size: 12px;
     }
 
     .main_image-three {
         width: 100%;
         height: 162px;
+        padding: 0 10px;
     }
 
     .main_image-three h5 {
         font-size: 14px;
-        left: 25px;
+        left: 0;
     }
 
     .main_image-three h2 {
-        font-size: 23px;
+        font-size: 25px;
         width: 100%;
         height: 16px;
-        left: 25px;
+        left: 0;
         top: 5px;
     }
 
     .details3 {
-        position: relative;
         top: 95px;
-        left: 25px;
+        left: 0;
         font-size: 12px;
     }
 
@@ -831,16 +867,35 @@ footer {
 
     .wrapper {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: repeat(4, 1fr);
         margin-bottom: 10px;
-        grid-row-gap: 20px;
-        grid-column-gap: 20px;
+        grid-gap: 20px;
         margin-left: 16px;
     }
 
     .news_article img {
         width: 100%;
         height: 114px;
+    }
+
+    .news_deals img {
+        width: 100%;
+        height: 169px;
+    }
+
+    .head {
+        grid-column: 1 / span 4;
+    }
+
+    .funds {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .hide-box {
+        display: grid;
+    }
+
+    .news_deals {
     }
 
     .most-popular {
@@ -854,8 +909,11 @@ footer {
         height: 234px;
     }
 
+    .latest-deals {
+        width: 100%;
+    }
+
     .titles p {
         position: relative;
-        /* left: 265px; */
     }
 }
