@@ -2,7 +2,7 @@
 
 > Dealing with media queries
 
-[screenshot](/images/tnw.PNG)
+[screenshot](images/tnw.PNG)
 
 This project is to demonstrate our understanding of working with media queries by builing a clone of the next web page.
 
