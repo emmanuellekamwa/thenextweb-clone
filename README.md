@@ -15,7 +15,7 @@ The goal of the project was to focus mainly on the responsiveness of the web pag
 
 ## Live Demo
 
-[Live Demo Link](https://raw.githack.com/emmanuellekamwa/thenextweb-clone/tree/feature-branch)
+[Live Demo Link](https://raw.githack.com/emmanuellekamwa/thenextweb-clone/feature-branch/index.html)
 
 ## Author
 
