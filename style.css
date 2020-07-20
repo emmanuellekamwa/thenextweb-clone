@@ -4,11 +4,6 @@
   box-sizing: border-box;
 }
 
-html,
-body {
-  max-width: 144rem;
-}
-
 body {
   margin: 0;
   max-width: 1500px;
@@ -66,6 +61,12 @@ header {
   margin-bottom: 10px;
 }
 
+.headings {
+  padding: 14px 12px;
+  position: relative;
+  bottom: 40px;
+}
+
 .main_image {
   display: block;
 }
@@ -75,9 +76,10 @@ header {
     linear-gradient(rgba(173, 173, 173, 0.2), rgba(20, 20, 20, 1.3)),
     url("images/nitendo.png");
   background-repeat: no-repeat;
-  height: 43vh;
+  height: 40vh;
   margin-bottom: 10px;
   margin-left: 8px;
+  margin-right: 8px;
 }
 
 .main_image-one h5,
@@ -136,9 +138,10 @@ header {
     linear-gradient(rgba(173, 173, 173, 0.2), rgba(20, 20, 20, 1)),
     url("images/usb.jpg");
   background-repeat: no-repeat;
-  height: 43vh;
+  height: 40vh;
   margin-bottom: 10px;
   margin-left: 8px;
+  margin-right: 8px;
 }
 
 .main_image-three {
@@ -146,9 +149,10 @@ header {
     linear-gradient(rgba(173, 173, 173, 0.2), rgba(20, 20, 20, 1)),
     url("images/technology.png");
   background-repeat: no-repeat;
-  height: 43vh;
+  height: 40vh;
   margin-bottom: 10px;
   margin-left: 8px;
+  margin-right: 8px;
 }
 
 .latest_news,
@@ -628,6 +632,7 @@ footer {
       "first third";
     grid-template-columns: 2fr 1fr;
     margin-bottom: 0;
+    margin-top: 25px;
     padding: 10px 10px;
   }
 
@@ -661,18 +666,18 @@ footer {
 
   .main_image-three h5 {
     position: relative;
-    top: 1px;
+    top: 21px;
   }
 
   .main_image-three h2 {
     font-size: 17px;
     position: relative;
-    top: 10px;
+    top: 21px;
   }
 
   .details3 {
     position: relative;
-    top: 10px;
+    top: 22px;
   }
 
   .wrapper {
@@ -810,6 +815,10 @@ footer {
     margin-left: 0;
   }
 
+  .main_image {
+    margin-right: 10px;
+  }
+
   .main_image-one {
     width: 100%;
     height: 362.25px;
@@ -891,6 +900,7 @@ footer {
   .main_image-three h5 {
     font-size: 14px;
     left: 0;
+    top: 5px;
   }
 
   .main_image-three h2 {
@@ -898,11 +908,11 @@ footer {
     width: 100%;
     height: 16px;
     left: 0;
-    top: 5px;
+    top: 8px;
   }
 
   .details3 {
-    top: 95px;
+    top: 105px;
     left: 0;
     font-size: 12px;
   }
