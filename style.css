@@ -204,8 +204,8 @@ header {
 
 .box-header > img {
   float: left;
-  margin: 10px;
-  width: 20%;
+  margin: 10px 10px 0 10px;
+  width: 5em;
 }
 
 .box-header > h4 {
@@ -230,7 +230,6 @@ header {
 .box-content {
   background-color: rgba(255, 68, 34, 0.05);
   padding: 20px;
-  border-bottom: 1px solid #f42;
   display: flex;
   flex-direction: column;
   line-height: 30px;
@@ -247,11 +246,12 @@ header {
 .box-footer {
   font-size: 14px;
   color: #555;
+  border-top: 1px solid #f42;
 }
 
 .box-footer p {
   color: #000;
-  margin: 15px;
+  margin: 4px;
 }
 
 .box-footer span {
@@ -412,7 +412,7 @@ footer {
   display: flex;
   list-style-type: none;
   margin-bottom: 1.5em;
-  margin-left: 5px;
+  margin-left: 35px;
 }
 
 .menu-links a {
@@ -433,6 +433,7 @@ footer {
 
 .menu-links {
   list-style-type: none;
+  margin-left: 20px;
 }
 
 .lower-footer {
@@ -544,12 +545,7 @@ footer {
   }
 
   .list2 {
-    display: grid;
-    grid-template-columns: repeat(5, auto);
-    justify-items: end;
-    justify-content: end;
-    list-style: none;
-    width: 20%;
+    display: none;
   }
 
   .list1 li,
@@ -705,7 +701,6 @@ footer {
   .head {
     display: grid;
     grid-column: 1 / span 3;
-    grid-template-columns: repeat(2, 1fr);
   }
 
   .funds {
@@ -946,6 +941,22 @@ footer {
 
   .head {
     grid-column: 1 / span 4;
+  }
+
+  .list {
+    display: flex;
+  }
+
+  .list li {
+    margin-right: 10px;
+    list-style: none;
+    font-size: 1.3em;
+  }
+
+  .list li:not(:last-of-type) {
+    border-right: 2px solid #f42;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 
   .funds {
